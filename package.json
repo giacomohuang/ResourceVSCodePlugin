@@ -1,0 +1,28 @@
+{
+  "name": "mpadmin-resource-autocomplete",
+  "displayName": "Mpadmin Resource Autocomplete",
+  "description": "Autocomplete for MP Resources",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:javascript",
+    "onView:getResWebview"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.refreshResourcesAndCompletion",
+        "title": "Refresh Resources Data"
+      }
+    ]
+  },
+  "dependencies": {
+    "mongodb": "^4.4.0"
+  }
+}
