@@ -54,7 +54,7 @@ function getResourcePath(resource, tree) {
 
 // 插件激活时调用的函数
 function activate(context) {
-  console.log('Congratulations, your extension "getres-autocomplete" is now active!');
+  console.log("Congratulations, your extension is now active!");
 
   fetchResources();
 
